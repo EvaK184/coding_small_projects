@@ -1,3 +1,6 @@
+# generates a strong password between 8-12 characters and copies it to the
+# clipboard ready for you to paste it to the desired field
+
 import re
 import random
 import string

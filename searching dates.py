@@ -1,3 +1,5 @@
+# Recognizes and prints dates (in the dd-mm-yyyy form) from the text copied to clipboard
+
 import re
 import pyperclip
 
@@ -6,7 +8,7 @@ dates_to_find = re.compile(r'''(
                        (-|/|.)
                        ([0-1]\d)
                        (-|/|.)
-                       ([1-2][09]\d\d)
+                       ([1-2]?[09]?\d\d)
                        ''', re.VERBOSE)
 
 clipboard = str(pyperclip.paste())
